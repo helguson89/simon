@@ -10,7 +10,7 @@ var started = false;
 
 var highscore = 0;
 
-$(document).keydown(function() {
+$(document).click(function() {
   if (!started) {
 
     $("h1").text("Level: " + level);
