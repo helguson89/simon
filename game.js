@@ -10,7 +10,7 @@ var started = false;
 
 var highscore = 0;
 
-$(document).click(function() {
+$(document).keydown(function() {
   if (!started) {
 
     $("h1").text("Level: " + level);
@@ -98,7 +98,7 @@ function checkAnswer(currentLevel){
       $("body").removeClass("game-over")
     }, 200);
 
-    $("h1").text("Game Over, trykk på en knapp for å starte");
+    $("h1").text("Game Over, trykk på en knapp");
 
     startOver();
   }
